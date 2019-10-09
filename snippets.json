@@ -1,0 +1,30 @@
+{
+  "Create test": {
+    "scope": "javascript,typescript,typescriptreact,javascriptreact ",
+    "prefix": "jest",
+    "body": [
+      "import React from 'react';",
+      "import renderer from 'react-test-renderer';",
+      "import ${1:Component name} from '.';",
+      "",
+      "describe('${1:Component name}', () => {",
+      "test('should $2', () => {",
+      "const tree = renderer.create(<${1:Component name}></${1:Component name}>).toJSON();",
+      "expect().toEqual();",
+      "});",
+      "});"
+    ],
+    "description": "Initial a test file"
+  },
+  "Create Snapshot test": {
+    "scope": "javascript,typescript,typescriptreact,javascriptreact ",
+    "prefix": "snapshot",
+    "body": [
+      "test('snapshot test', () => {",
+      "const tree = renderer.create(<${1:Component name}></${1:Component name}>).toJSON();",
+      "expect(tree).toMatchSnapshot();",
+      "});"
+    ],
+    "description": "Initial a test file"
+  }
+}

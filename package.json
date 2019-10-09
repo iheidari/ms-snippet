@@ -1,0 +1,33 @@
+{
+  "name": "mx-snippet",
+  "displayName": "Mx Snippet",
+  "description": "Mx Snippet package for Javascript and Typescript",
+  "version": "0.0.1",
+  "publisher": "iheidari",
+  "keywords": [
+    "Snippet",
+    "VS Code",
+    "Extension"
+  ],
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript,typescript,typescriptreact,javascriptreact",
+        "path": "./snippets.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vsce": "^1.67.1"
+  },
+  "scripts": {
+    "package": "vsce package"
+  },
+  "repository": "https://github.com/iheidari/ms-snippet"
+}
